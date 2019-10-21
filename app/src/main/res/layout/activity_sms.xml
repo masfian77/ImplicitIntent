@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SmsActivity">
+
+    <EditText
+        android:id="@+id/edt_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edt_body_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Message"
+        android:lines="5" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quick Sms Send" />
+
+    <Button
+        android:id="@+id/btn_send_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent Sms Send" />
+
+</LinearLayout>
